@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="10dp"
+        android:background="#ffff"
+        android:id="@+id/relLayout1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="numberSigned"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:id="@+id/latitude_input_search"
+            android:background="@null"
+            android:hint="Latitud"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/latitude_input_search"
+            android:inputType="numberSigned"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:id="@+id/longitude_input_search"
+            android:background="@null"
+            android:hint="Longitud"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/longitude_input_search"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:id="@+id/ll_search_button"
+            android:text="Buscar"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="10dp"
+        android:background="#ffff"
+        android:id="@+id/relLayout2"
+        >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:id="@+id/km_input_search"
+                android:background="@null"
+                android:hint="Km alrededor"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/km_input_search"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:id="@+id/km_search_button"
+                android:text="Buscar alrededor"/>
+
+    </RelativeLayout>
+
+</fragment>
